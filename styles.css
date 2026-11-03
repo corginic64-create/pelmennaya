@@ -40,6 +40,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+[id] { scroll-margin-top: 84px; }
+
 body {
   margin: 0;
   background: var(--cream);
@@ -525,24 +527,67 @@ a:focus-visible {
   line-height: 1.78;
 }
 
-.menu__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(28px, 4.5vw, 64px);
+.menu__cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: clamp(26px, 3.6vw, 40px);
+  padding-bottom: clamp(18px, 2.4vw, 26px);
+  border-bottom: 1px solid var(--line);
 }
 
-.menu__title {
-  padding-bottom: 12px;
-  margin-bottom: 8px;
-  border-bottom: 2px solid var(--deep);
-  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+.menu__cats a {
+  padding: 8px 15px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: .8rem;
   font-weight: 600;
-  letter-spacing: .02em;
-  text-transform: uppercase;
-  font-family: var(--sans);
+  letter-spacing: .01em;
+  color: var(--muted);
+  white-space: nowrap;
+  transition:
+    background-color .4s var(--ease),
+    border-color .4s var(--ease),
+    color .4s var(--ease);
 }
 
-.dish { padding-block: 18px; border-bottom: 1px dashed var(--line); }
+.menu__cats a:hover {
+  background: var(--deep);
+  border-color: var(--deep);
+  color: var(--cream);
+}
+
+.menu-block { margin-top: clamp(28px, 3.6vw, 42px); }
+
+.menu-block__title {
+  padding-bottom: 12px;
+  margin-bottom: 6px;
+  border-bottom: 2px solid var(--deep);
+  font-family: var(--serif);
+  font-size: clamp(1.22rem, 2vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+
+.menu-block .dish-list {
+  columns: 2;
+  column-gap: clamp(28px, 4vw, 60px);
+}
+
+.dish {
+  padding-block: 16px;
+  border-bottom: 1px dashed var(--line);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.dish__weight {
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .02em;
+  color: var(--muted);
+  white-space: nowrap;
+}
 .dish:last-child { border-bottom: 0; }
 
 .dish__row {
@@ -989,6 +1034,17 @@ a:focus-visible {
   .nav__links { display: none; }
   .nav__call { min-height: 38px; padding: 0 16px; font-size: .78rem; }
   .brand { font-size: 1.15rem; }
+
+  .menu__cats {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-inline: calc(var(--pad) * -1);
+    padding-inline: var(--pad);
+    scrollbar-width: none;
+  }
+  .menu__cats::-webkit-scrollbar { display: none; }
+  .menu-block .dish-list { columns: 1; }
+  .dish__weight { margin-left: auto; }
 
   .hero { min-height: 92svh; }
   .hero__note { gap: 10px; font-size: .72rem; }

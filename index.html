@@ -105,10 +105,10 @@
         <p class="eyebrow reveal">О кафе</p>
         <h2 class="reveal" style="--d:.06s">Не фабрика.<br>Просто кухня</h2>
         <p class="reveal" style="--d:.14s">
-          Мы открылись в маленьком помещении на первом этаже и с тех пор
-          не поменяли главного: лепим сами, руками, каждое утро.
-          Получается примерно 2 000 пельменей в день — и почти всегда
-          к вечеру их не остаётся.
+          Мы на первом этаже на Декабристов Бестужевых. Пельмени, манты
+          и вареники лепим сами, руками. Кроме них — супы, салаты,
+          стейки и десерты: зайти можно и за тарелкой пельменей,
+          и на полноценный ужин.
         </p>
         <p class="reveal" style="--d:.2s">
           Кроме пельменей — манты и вареники ручной лепки, стейки, пасты
@@ -117,9 +117,9 @@
         </p>
 
         <ul class="facts reveal" style="--d:.26s">
-          <li><strong>2 000</strong><span>пельменей в день</span></li>
-          <li><strong>6:30</strong><span>начинаем лепить</span></li>
-          <li><strong>0</strong><span>полуфабрикатов</span></li>
+          <li><strong>3</strong><span>вида пельменей</span></li>
+          <li><strong>50+</strong><span>блюд в меню</span></li>
+          <li><strong>12–23</strong><span>работаем ежедневно</span></li>
         </ul>
       </div>
     </div>
@@ -130,103 +130,527 @@
     <div class="wrap">
       <header class="section-head">
         <p class="eyebrow reveal">Меню</p>
-        <h2 class="reveal" style="--d:.06s">Что сегодня варим</h2>
+        <h2 class="reveal" style="--d:.06s">Пельмень и не только</h2>
         <p class="section-head__note reveal" style="--d:.12s">
-          Пельмени подаём порциями по 12 штук. Можно взять половинку —
-          если хочется попробовать несколько видов.
+          Пельмени, манты и вареники ручной лепки, супы, салаты, стейки
+          и десерты. Порции большие — можно брать одну на двоих.
         </p>
       </header>
 
-      <div class="menu__grid">
+      <nav class="menu__cats reveal" aria-label="Разделы меню">
+        <a href="#m-pelmeni">Пельмени и манты</a>
+        <a href="#m-soups">Супы</a>
+        <a href="#m-salads">Салаты</a>
+        <a href="#m-cold">Закуски</a>
+        <a href="#m-main">Горячее</a>
+        <a href="#m-sides">Гарниры</a>
+        <a href="#m-desserts">Десерты</a>
+      </nav>
 
-        <div class="menu__col reveal">
-          <h3 class="menu__title">Пельмени</h3>
-          <ul class="dish-list">
-            <li class="dish">
-              <div class="dish__row">
-                <h4 class="dish__name">Классические <span class="tag">хит</span></h4>
-                <span class="dish__dots" aria-hidden="true"></span>
-                <span class="dish__price">320 ₽</span>
-              </div>
-              <p class="dish__desc">Говядина и свинина, много лука, чёрный перец. 12 шт.</p>
-            </li>
+      <!-- Пельмени -->
+      <div class="menu-block reveal" id="m-pelmeni">
+        <h3 class="menu-block__title">Пельмени, манты, вареники</h3>
+        <ul class="dish-list">
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Пельмени домашние</h4>
+              <span class="dish__weight">280 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">590 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Пельмени с бараниной</h4>
+              <span class="dish__weight">280 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">690 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Пельмени с лососем</h4>
+              <span class="dish__weight">280 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">750 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Манты домашние</h4>
+              <span class="dish__weight">330 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">650 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Манты с бараниной</h4>
+              <span class="dish__weight">330 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">720 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Вареники с картошкой</h4>
+              <span class="dish__weight">280 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">490 ₽</span>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-            <li class="dish">
-              <div class="dish__row">
-                <h4 class="dish__name">Сибирские</h4>
-                <span class="dish__dots" aria-hidden="true"></span>
-                <span class="dish__price">390 ₽</span>
-              </div>
-              <p class="dish__desc">Крупнее и сочнее, подаём в бульоне с зеленью. 12 шт.</p>
-            </li>
+      <!-- Супы -->
+      <div class="menu-block reveal" id="m-soups">
+        <h3 class="menu-block__title">Супы</h3>
+        <ul class="dish-list">
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Суп с бараниной и красной фасолью</h4>
+              <span class="dish__weight">370 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">610 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Солянка мясная</h4>
+              <span class="dish__weight">370 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">540 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Уха с лососем и треской</h4>
+              <span class="dish__weight">370 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">450 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Крем-суп с лесными грибами</h4>
+              <span class="dish__weight">370 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">450 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Овощной суп</h4>
+              <span class="dish__weight">370 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">440 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Суп куриный</h4>
+              <span class="dish__weight">370 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">310 ₽</span>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-            <li class="dish">
-              <div class="dish__row">
-                <h4 class="dish__name">В горшочке</h4>
-                <span class="dish__dots" aria-hidden="true"></span>
-                <span class="dish__price">360 ₽</span>
-              </div>
-              <p class="dish__desc">Запекаем со сметаной и сыром под крышкой.</p>
-            </li>
+      <!-- Салаты -->
+      <div class="menu-block reveal" id="m-salads">
+        <h3 class="menu-block__title">Салаты</h3>
+        <ul class="dish-list">
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">С тунцом и мини-моцареллой</h4>
+              <span class="dish__weight">250 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">650 ₽</span>
+            </div>
+            <p class="dish__desc">Тунец, мини-моцарелла, черри, айсберг, соус песто, оливковое масло, бальзамический крем, красный лук.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Овощи со сметаной</h4>
+              <span class="dish__weight">250 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">540 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Греческий</h4>
+              <span class="dish__weight">260 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">590 ₽</span>
+            </div>
+            <p class="dish__desc">Айсберг, черри, огурцы, маслины, сыр фета, перец болгарский, красный лук, масло оливковое.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Гренада</h4>
+              <span class="dish__weight">240 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">650 ₽</span>
+            </div>
+            <p class="dish__desc">Вырезка говяжья, перец болгарский, лук, айсберг, соевый соус, оливки, уксус винный белый, масло оливковое.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Цезарь с курицей</h4>
+              <span class="dish__weight">210 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">640 ₽</span>
+            </div>
+            <p class="dish__desc">Айсберг, соус, черри, сухарики, сыр, куриное филе.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Цезарь с креветками</h4>
+              <span class="dish__weight">210 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">720 ₽</span>
+            </div>
+            <p class="dish__desc">Айсберг, соус, черри, сухарики, сыр, креветки тигровые.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Тёплый с куриным филе и шампиньонами</h4>
+              <span class="dish__weight">290 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">680 ₽</span>
+            </div>
+            <p class="dish__desc">Куриное филе, шампиньоны, айсберг, кабачки, черри, картофель, масло сливочное, соевый соус.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Весенний</h4>
+              <span class="dish__weight">250 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">480 ₽</span>
+            </div>
+            <p class="dish__desc">Капуста, помидоры, огурцы, перец болгарский, соевый соус, лук порей, масло оливковое, сельдерей, сок лимона.</p>
+          </li>
+        </ul>
+      </div>
 
-            <li class="dish">
-              <div class="dish__row">
-                <h4 class="dish__name">Бульон с пельменями</h4>
-                <span class="dish__dots" aria-hidden="true"></span>
-                <span class="dish__price">240 ₽</span>
-              </div>
-              <p class="dish__desc">Прозрачный куриный бульон, 6 пельменей, укроп.</p>
-            </li>
-          </ul>
-        </div>
+      <!-- Закуски -->
+      <div class="menu-block reveal" id="m-cold">
+        <h3 class="menu-block__title">Закуски</h3>
+        <ul class="dish-list">
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Запечённая телятина на соусе из тунца</h4>
+              <span class="dish__weight">255 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">810 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Сырная тарелка</h4>
+              <span class="dish__weight">210 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">910 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Мясное ассорти</h4>
+              <span class="dish__weight">200 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">750 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Сало под водочку</h4>
+              <span class="dish__weight">190 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">620 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Огурчики малосольные с чесноком</h4>
+              <span class="dish__weight">200 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">460 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Рулеты из ветчины с сыром</h4>
+              <span class="dish__weight">215 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">640 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Сельдь слабой соли с картофелем</h4>
+              <span class="dish__weight">250 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">550 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Хлебное ассорти с творожным кремом</h4>
+              <span class="dish__weight">200 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">310 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Говяжий язык с грибным соусом</h4>
+              <span class="dish__weight">200 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">850 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Креветки тигровые с соусом терияки</h4>
+              <span class="dish__weight">190 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">1120 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Жульен с курицей и грибами</h4>
+              <span class="dish__weight">210 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">690 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Жульен с креветками и лососем</h4>
+              <span class="dish__weight">210 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">850 ₽</span>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-        <div class="menu__col reveal" style="--d:.1s">
-          <h3 class="menu__title">Вареники и не только</h3>
-          <ul class="dish-list">
-            <li class="dish">
-              <div class="dish__row">
-                <h4 class="dish__name">С картошкой и грибами <span class="tag tag--veg">постное</span></h4>
-                <span class="dish__dots" aria-hidden="true"></span>
-                <span class="dish__price">290 ₽</span>
-              </div>
-              <p class="dish__desc">Жареный лук, топлёное масло, сметана.</p>
-            </li>
+      <!-- Горячее -->
+      <div class="menu-block reveal" id="m-main">
+        <h3 class="menu-block__title">Основные блюда</h3>
+        <ul class="dish-list">
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Стейк Рибай (прайм) <span class="tag">за 100 г</span></h4>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">1100 ₽</span>
+            </div>
+            <p class="dish__desc">Стейки от 350 грамм живого веса.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Пеппер-стейк</h4>
+              <span class="dish__weight">400 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">1450 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Медальоны из говяжьей вырезки</h4>
+              <span class="dish__weight">240 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">1280 ₽</span>
+            </div>
+            <p class="dish__desc">Вишнёвый или грибной соус на выбор.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Бефстроганов с пюре</h4>
+              <span class="dish__weight">390 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">1050 ₽</span>
+            </div>
+            <p class="dish__desc">Из говяжьей вырезки, с грибами и картофельным пюре.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Телячьи котлеты в сливочном соусе</h4>
+              <span class="dish__weight">400 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">850 ₽</span>
+            </div>
+            <p class="dish__desc">С картофельным пюре.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Рубленый шницель из лосося</h4>
+              <span class="dish__weight">310 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">990 ₽</span>
+            </div>
+            <p class="dish__desc">Со стручковой фасолью.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Стейк из лосося на гриле</h4>
+              <span class="dish__weight">170 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">1290 ₽</span>
+            </div>
+            <p class="dish__desc">С лаймовым соусом.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Филе трески жареное</h4>
+              <span class="dish__weight">230 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">890 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Эскалоп из свинины на гриле</h4>
+              <span class="dish__weight">190 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">790 ₽</span>
+            </div>
+            <p class="dish__desc">С соусом наполи.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Филе куриное на гриле</h4>
+              <span class="dish__weight">220 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">790 ₽</span>
+            </div>
+            <p class="dish__desc">Под грибным соусом.</p>
+          </li>
+        </ul>
+      </div>
 
-            <li class="dish">
-              <div class="dish__row">
-                <h4 class="dish__name">С вишней</h4>
-                <span class="dish__dots" aria-hidden="true"></span>
-                <span class="dish__price">280 ₽</span>
-              </div>
-              <p class="dish__desc">Летом — свежая вишня, зимой — замороженная. Со сметаной.</p>
-            </li>
+      <!-- Гарниры -->
+      <div class="menu-block reveal" id="m-sides">
+        <h3 class="menu-block__title">Гарниры</h3>
+        <ul class="dish-list">
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Картофель «Айдахо»</h4>
+              <span class="dish__weight">150 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">280 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Картофельное пюре</h4>
+              <span class="dish__weight">200 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">360 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Картофель фри</h4>
+              <span class="dish__weight">130 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">290 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Овощи гриль</h4>
+              <span class="dish__weight">180 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">430 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Фасоль стручковая с томатами черри</h4>
+              <span class="dish__weight">150 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">380 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Цветная капуста с сыром</h4>
+              <span class="dish__weight">160 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">390 ₽</span>
+            </div>
+            <p class="dish__desc">Запечённая.</p>
+          </li>
+        </ul>
+      </div>
 
-            <li class="dish">
-              <div class="dish__row">
-                <h4 class="dish__name">С творогом</h4>
-                <span class="dish__dots" aria-hidden="true"></span>
-                <span class="dish__price">270 ₽</span>
-              </div>
-              <p class="dish__desc">Творог, желток, немного сахара. Подаём с маслом.</p>
-            </li>
-
-            <li class="dish">
-              <div class="dish__row">
-                <h4 class="dish__name">Домашний борщ</h4>
-                <span class="dish__dots" aria-hidden="true"></span>
-                <span class="dish__price">260 ₽</span>
-              </div>
-              <p class="dish__desc">На говяжьем бульоне, со сметаной и пампушкой.</p>
-            </li>
-          </ul>
-        </div>
-
+      <!-- Десерты -->
+      <div class="menu-block reveal" id="m-desserts">
+        <h3 class="menu-block__title">Десерты</h3>
+        <ul class="dish-list">
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Муале шоколадный</h4>
+              <span class="dish__weight">165 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">450 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Чизкейк Нью-Йорк</h4>
+              <span class="dish__weight">125 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">350 ₽</span>
+            </div>
+            <p class="dish__desc">Классический или шоколадный.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Чизкейк «Дубайский шоколад»</h4>
+              <span class="dish__weight">130 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">480 ₽</span>
+            </div>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Штрудель</h4>
+              <span class="dish__weight">150 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">390 ₽</span>
+            </div>
+            <p class="dish__desc">Яблоко, груша или вишня.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Мороженое</h4>
+              <span class="dish__weight">50 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">140 ₽</span>
+            </div>
+            <p class="dish__desc">Ванильное, клубничное, шоколадное, фисташковое.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__row">
+              <h4 class="dish__name">Сироп</h4>
+              <span class="dish__weight">30 г</span>
+              <span class="dish__dots" aria-hidden="true"></span>
+              <span class="dish__price">60 ₽</span>
+            </div>
+            <p class="dish__desc">Шоколад, карамель, кокос, лайм, яблоко, мята, персик, гренадин, ваниль, малина, клубника, вишня.</p>
+          </li>
+        </ul>
       </div>
 
       <p class="menu__foot reveal">
-        Также в меню — стейки, пасты и блюда европейской кухни.
-        Добавки: сметана, топлёное масло, соус — <strong>60 ₽</strong>.
-        С собой — та же цена, упакуем.
+        Цены указаны в рублях за порцию. Меню может меняться —
+        актуальное всегда подскажут по телефону.
+        <a href="tel:+79650052080">+7 (965) 005-20-80</a>
       </p>
     </div>
   </section>
