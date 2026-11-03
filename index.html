@@ -12,7 +12,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2320281F'/%3E%3Cpath d='M14 36c0-8 8-14 18-14s18 6 18 14c0 5-8 8-18 8s-18-3-18-8z' fill='%23FBF6EC'/%3E%3Cpath d='M20 33c3-2 7-3 12-3s9 1 12 3' stroke='%23B84A2F' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -42,8 +42,7 @@
   <!-- ================= HERO ================= -->
   <section class="hero" id="top">
     <div class="hero__media" aria-hidden="true">
-      <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=2000&q=80"
-           alt="" fetchpriority="high">
+      <img src="img/hero.jpg" alt="" width="1800" height="1200" fetchpriority="high">
     </div>
     <div class="hero__veil" aria-hidden="true"></div>
 
@@ -92,11 +91,11 @@
     <div class="wrap about__grid">
       <div class="about__media reveal">
         <figure class="photo photo--main">
-          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1100&q=80"
-               alt="Повара лепят пельмени на кухне" loading="lazy" width="1100" height="825">
+          <img src="img/cooking.jpg"
+               alt="Повара лепят пельмени на кухне" loading="lazy" width="1100" height="1400">
         </figure>
         <figure class="photo photo--small">
-          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80"
+          <img src="img/basket.jpg"
                alt="Пельмени в пароварке" loading="lazy" width="600" height="600">
         </figure>
       </div>
@@ -269,16 +268,16 @@
   <!-- ================= ФОТО-ПОЛОСА ================= -->
   <section class="gallery" aria-label="Фотографии кафе">
     <div class="gallery__item reveal">
-      <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80"
-           alt="Пельмени в глубокой тарелке с зеленью" loading="lazy" width="800" height="800">
+      <img src="img/bowl.jpg"
+           alt="Пельмени в глубокой тарелке с зеленью" loading="lazy" width="800" height="600">
     </div>
     <div class="gallery__item reveal" style="--d:.08s">
-      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80"
-           alt="Зал кафе с деревянными столами" loading="lazy" width="800" height="800">
+      <img src="img/hall.jpg"
+           alt="Зал кафе с деревянными столами" loading="lazy" width="800" height="600">
     </div>
     <div class="gallery__item reveal" style="--d:.16s">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
-           alt="Домашняя еда на деревянном столе" loading="lazy" width="800" height="800">
+      <img src="img/table.jpg"
+           alt="Домашняя еда на деревянном столе" loading="lazy" width="800" height="600">
     </div>
   </section>
 
