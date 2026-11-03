@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пельмень — пельмени и вареники ручной лепки</title>
+<meta name="description" content="Кафе «Пельмень»: пельмени и вареники ручной лепки, домашний бульон и сметана. Лепим каждое утро, варим при вас. Открыто до 23:00.">
+<meta property="og:title" content="Пельмень — пельмени и вареники ручной лепки">
+<meta property="og:description" content="Лепим руками каждое утро. Варим при вас.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FBF6EC">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2320281F'/%3E%3Cpath d='M14 36c0-8 8-14 18-14s18 6 18 14c0 5-8 8-18 8s-18-3-18-8z' fill='%23FBF6EC'/%3E%3Cpath d='M20 33c3-2 7-3 12-3s9 1 12 3' stroke='%23B84A2F' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#menu">Перейти к меню</a>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="26" height="26"><path d="M5 23c0-6 6.7-11 15-11s15 5 15 11c0 4-6.7 6-15 6S5 27 5 23z" fill="currentColor"/><path d="M11 21c3.4-2.2 6.9-3.2 10.5-3.2S29 18.8 32 21" stroke="#B84A2F" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand__text">Пельмень</span>
+    </a>
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="#about">О кафе</a>
+      <a href="#menu">Меню</a>
+      <a href="#visit">Адрес</a>
+    </nav>
+    <a class="nav__call" href="tel:+79000000000">Позвонить</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero__media" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=2000&q=80"
+           alt="" fetchpriority="high">
+    </div>
+    <div class="hero__veil" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <p class="pill reveal">
+        <span class="pill__dot"></span>
+        Открыто сегодня до 23:00
+      </p>
+
+      <h1 class="reveal" style="--d:.06s">Пельмени,<br>как у бабушки</h1>
+
+      <p class="hero__lead reveal" style="--d:.16s">
+        Тесто раскатываем руками каждое утро. Фарш — только мясо, лук и соль.
+        Варим при вас, подаём со сметаной и топлёным маслом.
+      </p>
+
+      <div class="hero__actions reveal" style="--d:.26s">
+        <a class="btn btn--accent" href="#menu">Смотреть меню</a>
+        <a class="btn btn--line" href="#visit">Как добраться</a>
+      </div>
+    </div>
+
+    <div class="hero__note reveal" style="--d:.4s">
+      <span>ул. Декабристов&nbsp;Бестужевых, 4В</span>
+      <span class="hero__note-sep" aria-hidden="true"></span>
+      <span>ежедневно 11:00 — 23:00</span>
+    </div>
+  </section>
+
+  <!-- ================= БЕГУЩАЯ СТРОКА ================= -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>пельмени ручной лепки</span><span aria-hidden="true">·</span>
+      <span>вареники с вишней</span><span aria-hidden="true">·</span>
+      <span>домашний бульон</span><span aria-hidden="true">·</span>
+      <span>сметана 20%</span><span aria-hidden="true">·</span>
+      <span>пельмени ручной лепки</span><span aria-hidden="true">·</span>
+      <span>вареники с вишней</span><span aria-hidden="true">·</span>
+      <span>домашний бульон</span><span aria-hidden="true">·</span>
+      <span>сметана 20%</span><span aria-hidden="true">·</span>
+    </div>
+  </div>
+
+  <!-- ================= О КАФЕ ================= -->
+  <section class="about" id="about">
+    <div class="wrap about__grid">
+      <div class="about__media reveal">
+        <figure class="photo photo--main">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1100&q=80"
+               alt="Повара лепят пельмени на кухне" loading="lazy" width="1100" height="825">
+        </figure>
+        <figure class="photo photo--small">
+          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80"
+               alt="Пельмени в пароварке" loading="lazy" width="600" height="600">
+        </figure>
+      </div>
+
+      <div class="about__text">
+        <p class="eyebrow reveal">О кафе</p>
+        <h2 class="reveal" style="--d:.06s">Не фабрика.<br>Просто кухня</h2>
+        <p class="reveal" style="--d:.14s">
+          Мы открылись в маленьком помещении на первом этаже и с тех пор
+          не поменяли главного: лепим сами, руками, каждое утро.
+          Получается примерно 2 000 пельменей в день — и почти всегда
+          к вечеру их не остаётся.
+        </p>
+        <p class="reveal" style="--d:.2s">
+          Никакой заморозки «на год вперёд». Если пельмени закончились —
+          значит, закончились. Скажем честно и предложим вареники.
+        </p>
+
+        <ul class="facts reveal" style="--d:.26s">
+          <li><strong>2 000</strong><span>пельменей в день</span></li>
+          <li><strong>6:30</strong><span>начинаем лепить</span></li>
+          <li><strong>0</strong><span>полуфабрикатов</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= МЕНЮ ================= -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow reveal">Меню</p>
+        <h2 class="reveal" style="--d:.06s">Что сегодня варим</h2>
+        <p class="section-head__note reveal" style="--d:.12s">
+          Пельмени подаём порциями по 12 штук. Можно взять половинку —
+          если хочется попробовать несколько видов.
+        </p>
+      </header>
+
+      <div class="menu__grid">
+
+        <div class="menu__col reveal">
+          <h3 class="menu__title">Пельмени</h3>
+          <ul class="dish-list">
+            <li class="dish">
+              <div class="dish__row">
+                <h4 class="dish__name">Классические <span class="tag">хит</span></h4>
+                <span class="dish__dots" aria-hidden="true"></span>
+                <span class="dish__price">320 ₽</span>
+              </div>
+              <p class="dish__desc">Говядина и свинина, много лука, чёрный перец. 12 шт.</p>
+            </li>
+
+            <li class="dish">
+              <div class="dish__row">
+                <h4 class="dish__name">Сибирские</h4>
+                <span class="dish__dots" aria-hidden="true"></span>
+                <span class="dish__price">390 ₽</span>
+              </div>
+              <p class="dish__desc">Крупнее и сочнее, подаём в бульоне с зеленью. 12 шт.</p>
+            </li>
+
+            <li class="dish">
+              <div class="dish__row">
+                <h4 class="dish__name">В горшочке</h4>
+                <span class="dish__dots" aria-hidden="true"></span>
+                <span class="dish__price">360 ₽</span>
+              </div>
+              <p class="dish__desc">Запекаем со сметаной и сыром под крышкой.</p>
+            </li>
+
+            <li class="dish">
+              <div class="dish__row">
+                <h4 class="dish__name">Бульон с пельменями</h4>
+                <span class="dish__dots" aria-hidden="true"></span>
+                <span class="dish__price">240 ₽</span>
+              </div>
+              <p class="dish__desc">Прозрачный куриный бульон, 6 пельменей, укроп.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__col reveal" style="--d:.1s">
+          <h3 class="menu__title">Вареники и не только</h3>
+          <ul class="dish-list">
+            <li class="dish">
+              <div class="dish__row">
+                <h4 class="dish__name">С картошкой и грибами <span class="tag tag--veg">постное</span></h4>
+                <span class="dish__dots" aria-hidden="true"></span>
+                <span class="dish__price">290 ₽</span>
+              </div>
+              <p class="dish__desc">Жареный лук, топлёное масло, сметана.</p>
+            </li>
+
+            <li class="dish">
+              <div class="dish__row">
+                <h4 class="dish__name">С вишней</h4>
+                <span class="dish__dots" aria-hidden="true"></span>
+                <span class="dish__price">280 ₽</span>
+              </div>
+              <p class="dish__desc">Летом — свежая вишня, зимой — замороженная. Со сметаной.</p>
+            </li>
+
+            <li class="dish">
+              <div class="dish__row">
+                <h4 class="dish__name">С творогом</h4>
+                <span class="dish__dots" aria-hidden="true"></span>
+                <span class="dish__price">270 ₽</span>
+              </div>
+              <p class="dish__desc">Творог, желток, немного сахара. Подаём с маслом.</p>
+            </li>
+
+            <li class="dish">
+              <div class="dish__row">
+                <h4 class="dish__name">Домашний борщ</h4>
+                <span class="dish__dots" aria-hidden="true"></span>
+                <span class="dish__price">260 ₽</span>
+              </div>
+              <p class="dish__desc">На говяжьем бульоне, со сметаной и пампушкой.</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="menu__foot reveal">
+        Добавки: сметана, топлёное масло, соус — <strong>60 ₽</strong>.
+        Чай и морс — <strong>90 ₽</strong>. С собой — та же цена, упакуем.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= ЛЕПИМ ================= -->
+  <section class="steps">
+    <div class="wrap">
+      <p class="eyebrow reveal">Каждый день</p>
+      <h2 class="reveal" style="--d:.06s">Три вещи, которые мы не ускоряем</h2>
+
+      <ol class="step-list">
+        <li class="step reveal" style="--d:.04s">
+          <span class="step__num">01</span>
+          <h3>Тесто отдыхает</h3>
+          <p>Замешиваем с вечера и даём постоять — тесто становится мягче и не рвётся при варке.</p>
+        </li>
+        <li class="step reveal" style="--d:.12s">
+          <span class="step__num">02</span>
+          <h3>Лепим руками</h3>
+          <p>Каждый пельмень закрываем вручную. Поэтому они все немного разные — так и должно быть.</p>
+        </li>
+        <li class="step reveal" style="--d:.2s">
+          <span class="step__num">03</span>
+          <h3>Варим при вас</h3>
+          <p>Не разогреваем в микроволновке. Опускаем в кипяток после заказа и несём к столу горячими.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= ЦИТАТА ================= -->
+  <section class="manifest">
+    <div class="wrap wrap--narrow">
+      <blockquote class="reveal">
+        «Хорошие пельмени — это не рецепт. Это когда тесто тонкое,
+        фарш сочный, а сметаны не жалко»
+      </blockquote>
+      <p class="manifest__by reveal" style="--d:.1s">Из нашей кухни</p>
+    </div>
+  </section>
+
+  <!-- ================= ФОТО-ПОЛОСА ================= -->
+  <section class="gallery" aria-label="Фотографии кафе">
+    <div class="gallery__item reveal">
+      <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80"
+           alt="Пельмени в глубокой тарелке с зеленью" loading="lazy" width="800" height="800">
+    </div>
+    <div class="gallery__item reveal" style="--d:.08s">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80"
+           alt="Зал кафе с деревянными столами" loading="lazy" width="800" height="800">
+    </div>
+    <div class="gallery__item reveal" style="--d:.16s">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+           alt="Домашняя еда на деревянном столе" loading="lazy" width="800" height="800">
+    </div>
+  </section>
+
+  <!-- ================= КАК НАЙТИ ================= -->
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="visit__head">
+        <p class="eyebrow reveal">Как найти</p>
+        <h2 class="reveal" style="--d:.06s">Первый этаж,<br>вход со двора</h2>
+      </div>
+
+      <div class="visit__grid">
+        <div class="visit__card reveal">
+          <p class="visit__label">Адрес</p>
+          <p class="visit__big">ул. Декабристов<br>Бестужевых, 4В</p>
+          <p class="visit__muted">Две минуты от остановки.<br>Парковка во дворе.</p>
+        </div>
+
+        <div class="visit__card reveal" style="--d:.08s">
+          <p class="visit__label">Часы</p>
+          <ul class="hours">
+            <li><span>Пн — Чт</span><span>11:00 — 23:00</span></li>
+            <li><span>Пт — Сб</span><span>11:00 — 00:00</span></li>
+            <li><span>Вс</span><span>11:00 — 22:00</span></li>
+          </ul>
+          <p class="visit__muted">Последний заказ — за 30 минут до закрытия.</p>
+        </div>
+
+        <div class="visit__card reveal" style="--d:.16s">
+          <p class="visit__label">Связаться</p>
+          <p class="visit__big"><a href="tel:+79000000000">+7 (900) 000-00-00</a></p>
+          <p class="visit__muted">Большие заказы и праздники — за день.</p>
+          <a class="visit__vk" href="https://vk.com/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M13.2 18.2c-6 0-9.5-4.2-9.6-11.1h3c.1 5.1 2.4 7.3 4.1 7.7V7.1h2.8v4.4c1.7-.2 3.5-2.2 4.1-4.4h2.8c-.5 2.7-2.3 4.7-3.7 5.5 1.4.7 3.5 2.4 4.3 5.6h-3.1c-.6-1.9-2.2-3.4-4.4-3.6v3.6z"/></svg>
+            Написать в ВК
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span class="brand brand--footer">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="22" height="22"><path d="M5 23c0-6 6.7-11 15-11s15 5 15 11c0 4-6.7 6-15 6S5 27 5 23z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand__text">Пельмень</span>
+    </span>
+    <p class="footer__note">Лепим руками. Варим при вас. Закрываемся, когда заканчиваются пельмени.</p>
+    <p class="footer__legal">© 2026 Кафе «Пельмень». Демонстрационный сайт.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
