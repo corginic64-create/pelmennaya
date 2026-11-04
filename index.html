@@ -15,6 +15,7 @@
 <link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<noscript><style>.menu__body { grid-template-rows: 1fr !important; } .menu__toggle { display: none !important; }</style></noscript>
 </head>
 <body>
 
@@ -136,6 +137,26 @@
           и десерты. Порции большие — можно брать одну на двоих.
         </p>
       </header>
+
+      <div class="menu__teaser reveal" style="--d:.16s">
+        <ul class="menu__picks">
+          <li><span>Пельмени домашние</span><strong>590 ₽</strong></li>
+          <li><span>Манты с бараниной</span><strong>720 ₽</strong></li>
+          <li><span>Стейк Рибай</span><strong>1 100 ₽ <i>/ 100 г</i></strong></li>
+          <li><span>Чизкейк Нью-Йорк</span><strong>350 ₽</strong></li>
+        </ul>
+
+        <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="menu-body" data-menu-toggle>
+          <span class="menu__toggle-icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="menu__toggle-label">Открыть меню</span>
+          <span class="menu__toggle-meta">7 разделов · 50+ блюд</span>
+        </button>
+      </div>
+
+      <div class="menu__body" id="menu-body">
+        <div class="menu__body-inner">
 
       <nav class="menu__cats reveal" aria-label="Разделы меню">
         <a href="#m-pelmeni">Пельмени и манты</a>
@@ -652,6 +673,9 @@
         актуальное всегда подскажут по телефону.
         <a href="tel:+79650052080">+7 (965) 005-20-80</a>
       </p>
+
+        </div>
+      </div>
     </div>
   </section>
 

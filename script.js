@@ -45,4 +45,80 @@
 
     updateNav();
   }
+
+  /* ---------- меню: открыть / свернуть ---------- */
+
+  var menuBody = document.getElementById("menu-body");
+  var menuToggle = document.querySelector("[data-menu-toggle]");
+
+  if (menuBody && menuToggle) {
+    var menuInner = menuBody.querySelector(".menu__body-inner");
+    var menuLabel = menuToggle.querySelector(".menu__toggle-label");
+
+    function setMenu(open) {
+      menuBody.classList.toggle("is-open", open);
+      menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      if (menuLabel) menuLabel.textContent = open ? "Свернуть меню" : "Открыть меню";
+      if (menuInner) menuInner.inert = !open;
+    }
+
+    setMenu(false);
+
+    menuToggle.addEventListener("click", function () {
+      var open = !menuBody.classList.contains("is-open");
+      setMenu(open);
+
+      if (!open && menuToggle.getBoundingClientRect().top < 0) {
+        menuToggle.scrollIntoView({
+          behavior: reduceMotion ? "auto" : "smooth",
+          block: "center"
+        });
+      }
+    });
+
+    function openForHash(hash) {
+      if (hash === "#menu") {
+        setMenu(true);
+        return;
+      }
+      if (hash.indexOf("#m-") !== 0) return;
+
+      var target = document.getElementById(hash.slice(1));
+      if (!target) return;
+
+      var wasClosed = !menuBody.classList.contains("is-open");
+      setMenu(true);
+      if (!wasClosed) return;
+
+      var scrollToTarget = function () {
+        target.scrollIntoView({
+          behavior: reduceMotion ? "auto" : "smooth",
+          block: "start"
+        });
+      };
+
+      if (reduceMotion) {
+        scrollToTarget();
+      } else {
+        menuBody.addEventListener("transitionend", function onEnd(event) {
+          if (event.propertyName !== "grid-template-rows") return;
+          menuBody.removeEventListener("transitionend", onEnd);
+          scrollToTarget();
+        });
+      }
+    }
+
+    openForHash(window.location.hash);
+
+    window.addEventListener("hashchange", function () {
+      openForHash(window.location.hash);
+    });
+
+    Array.prototype.forEach.call(
+      document.querySelectorAll('a[href="#menu"]'),
+      function (link) {
+        link.addEventListener("click", function () { setMenu(true); });
+      }
+    );
+  }
 })();
